@@ -1,6 +1,9 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart'
   show Swiper, SwiperPagination;
+import 'package:flutter_xiecheng/dao/home_dao.dart' show HomeDao;
+import 'package:flutter_xiecheng/model/home_model.dart' show HomeModel;
 const APPBAR_SCROLL_OFFSET = 100;
 
 class HomePage extends StatefulWidget {
@@ -15,6 +18,36 @@ class _HomePageState extends State<HomePage> {
     'http://210.76.68.128/zxwcms//gd_zxw/upload/file/201805/30121611jwtf.jpg'
   ];
   double appBarAlpha = 0;
+  String resultString = '12';
+
+  @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
+
+  loadData() async {
+    // HomeDao.fetch().then((result) {
+    //   setState((){
+    //     resultString = json.encode(result);
+    //   });
+    // }).catchError((onError) {
+    //   setState(() {
+    //     resultString = onError;
+    //   });
+    // });
+
+    try {
+      HomeModel model = await HomeDao.fetch();
+      setState((){
+        resultString = json.encode(model);
+      });
+    } catch(e) {
+      setState(() {
+        resultString = e.toString();
+      });
+    }
+  }
 
   _onScroll(offset) {
     // print(offset);
@@ -72,7 +105,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               height: 800,
               child: ListTile(
-                title: Text('京津冀'),
+                title: Text(resultString),
               ),
             )
           ],
