@@ -4,6 +4,9 @@ import 'package:flutter_swiper/flutter_swiper.dart'
   show Swiper, SwiperPagination;
 import 'package:flutter_xiecheng/dao/home_dao.dart' show HomeDao;
 import 'package:flutter_xiecheng/model/home_model.dart' show HomeModel;
+import 'package:flutter_xiecheng/model/common_model.dart' show CommonModel;
+import 'package:flutter_xiecheng/widget/grid_nav.dart' show GridNav;
+import 'package:flutter_xiecheng/widget/local_nav.dart' show LocalNav;
 const APPBAR_SCROLL_OFFSET = 100;
 
 class HomePage extends StatefulWidget {
@@ -18,7 +21,7 @@ class _HomePageState extends State<HomePage> {
     'http://210.76.68.128/zxwcms//gd_zxw/upload/file/201805/30121611jwtf.jpg'
   ];
   double appBarAlpha = 0;
-  String resultString = '12';
+  List<CommonModel> localNavList = [];
 
   @override
   void initState() {
@@ -40,12 +43,10 @@ class _HomePageState extends State<HomePage> {
     try {
       HomeModel model = await HomeDao.fetch();
       setState((){
-        resultString = json.encode(model);
+        localNavList = model.localNavList;
       });
     } catch(e) {
-      setState(() {
-        resultString = e.toString();
-      });
+      print(e);
     }
   }
 
@@ -66,6 +67,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xfff2f2f2),
       body: Stack(
         children: <Widget>[
           mainListView(),
@@ -102,12 +104,11 @@ class _HomePageState extends State<HomePage> {
                 pagination: SwiperPagination(),
               ),
             ),
-            Container(
-              height: 800,
-              child: ListTile(
-                title: Text(resultString),
-              ),
-            )
+            Padding(
+              padding: EdgeInsets.fromLTRB(7, 4, 7, 4),
+              child: LocalNav(localNavList: localNavList),
+            ),
+            GridNav(gridNavModel: null)
           ],
         ),
       )
