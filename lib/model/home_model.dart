@@ -35,7 +35,7 @@ class HomeModel {
       bannerList: bannerList,
       localNavList: localNavList,
       subNavList: subNavList,
-      griNav: GridNavModel.fromJson(json['griNav']),
+      griNav: GridNavModel.fromJson(json['gridNav']),
       salesBox: SalesBoxModel.fromJson(json['salesBox'])
     );
   }
