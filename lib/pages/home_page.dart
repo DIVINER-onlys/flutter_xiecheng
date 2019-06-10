@@ -8,6 +8,7 @@ import 'package:flutter_xiecheng/model/common_model.dart' show CommonModel;
 import 'package:flutter_xiecheng/model/grid_nav_model.dart' show GridNavModel;
 import 'package:flutter_xiecheng/widget/grid_nav.dart' show GridNav;
 import 'package:flutter_xiecheng/widget/local_nav.dart' show LocalNav;
+import 'package:flutter_xiecheng/widget/sub_nav.dart' show SubNav;
 const APPBAR_SCROLL_OFFSET = 100;
 
 class HomePage extends StatefulWidget {
@@ -24,6 +25,7 @@ class _HomePageState extends State<HomePage> {
   double appBarAlpha = 0;
   List<CommonModel> localNavList = [];
   GridNavModel gridNavModel;
+  List<CommonModel> subNavList = [];
 
   @override
   void initState() {
@@ -47,6 +49,7 @@ class _HomePageState extends State<HomePage> {
       setState((){
         localNavList = model.localNavList;
         gridNavModel = model.griNav;
+        subNavList = model.subNavList;
       });
     } catch(e) {
       print(e);
@@ -114,6 +117,10 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: EdgeInsets.fromLTRB(7, 0, 7, 4),
               child: GridNav(gridNavModel: gridNavModel)
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(7, 0, 7, 4),
+              child: SubNav(subNavList: subNavList),
             )
           ],
         ),
