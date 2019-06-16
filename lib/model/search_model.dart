@@ -1,10 +1,11 @@
 // 搜索模型
 
 class SearchModel {
+  String keyword;
   Head head;
   List<SearchItem> data;
 
-  SearchModel({this.head, this.data});
+  SearchModel({this.keyword, this.head, this.data});
 
   SearchModel.fromJson(Map<String, dynamic> json) {
     head = json['head'] != null ? new Head.fromJson(json['head']) : null;
