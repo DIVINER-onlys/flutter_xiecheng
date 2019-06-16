@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_xiecheng/dao/search_dao.dart' show SearchDao;
+import 'package:flutter_xiecheng/model/search_model.dart' show SearchModel;
 import 'package:flutter_xiecheng/widget/search_bar.dart' show SearchBar;
 
 class SearchPage extends StatefulWidget {
@@ -7,6 +9,8 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
+  String showText = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +27,19 @@ class _SearchPageState extends State<SearchPage> {
               Navigator.pop(context);
             },
             onChanged: _onTextChange,
-          )
+          ),
+          InkWell(
+            onTap: (){
+              SearchDao.fetch('https://m.ctrip.com/restapi/h5api/searchapp/search?source=mobileweb&action=autocomplete&contentType=json&keyword=长城')
+              .then((SearchModel value) {
+                setState(() {
+                  showText = value.data[0].url;
+                });
+              });
+            },
+            child: Text('data'),
+          ),
+          Text(showText)
         ],
       ),
     );

@@ -1,0 +1,251 @@
+// https://m.ctrip.com/restapi/h5api/searchapp/search?source=mobileweb&action=autocomplete&contentType=json&keyword=长城
+
+
+
+{
+head: {
+auth: null,
+errcode: 0
+},
+data: [
+{
+word: "长城路附近的酒店",
+type: "poihotel",
+districtname: "广州",
+url: "http://m.ctrip.com/webapp/hotel/searchlist/22.77680015563965/113.39399719238281"
+},
+{
+word: "广州长城酒店",
+type: "hotel",
+price: "实时计价",
+star: "三星级",
+zonename: "珠江新城/五羊新城 ",
+districtname: "广州",
+url: "http://m.ctrip.com/webapp/hotel/hoteldetail/457345.html?atime=20190616"
+},
+{
+word: "广州长城宾馆",
+type: "hotel",
+price: "实时计价",
+star: "经济型",
+zonename: "珠江新城/五羊新城 ",
+districtname: "广州",
+url: "http://m.ctrip.com/webapp/hotel/hoteldetail/1734894.html?atime=20190616"
+},
+{
+word: "广州长城大厦",
+type: "hotel",
+price: "实时计价",
+star: "经济型",
+zonename: "珠江新城/五羊新城 ",
+districtname: "广州",
+url: "http://m.ctrip.com/webapp/hotel/hoteldetail/4070958.html?atime=20190616"
+},
+{
+word: "广州皇圣逸林酒店(原长城酒店)",
+type: "hotel",
+price: "实时计价",
+star: "经济型",
+zonename: "番禺市桥/亚运城 ",
+districtname: "广州",
+url: "http://m.ctrip.com/webapp/hotel/hoteldetail/2040416.html?atime=20190616"
+},
+{
+word: "广州从化长城宾馆",
+type: "hotel",
+price: "实时计价",
+star: " ",
+zonename: " ",
+districtname: "广州",
+url: "http://m.ctrip.com/webapp/hotel/hoteldetail/6005801.html?atime=20190616"
+},
+{
+word: "长城",
+type: "sight",
+districtname: "宽城",
+url: "http://m.ctrip.com/webapp/you/sight/Kuancheng2542/4599727.html"
+},
+{
+word: "长城",
+type: "sight",
+districtname: "景泰",
+url: "http://m.ctrip.com/webapp/you/sight/Jingtai2802/4575617.html"
+},
+{
+word: "八达岭长城",
+type: "sight",
+districtname: "延庆区",
+url: "http://m.ctrip.com/webapp/you/sight/Yanqingqu770/230.html"
+},
+{
+word: "八达岭长城门票",
+type: "ticket",
+districtname: "延庆区 ￥35 起",
+url: "http://m.ctrip.com/webapp/ticket/dest/t230.html"
+},
+{
+word: "慕田峪长城门票",
+type: "ticket",
+districtname: "怀柔区 ￥40 起",
+url: "http://m.ctrip.com/webapp/ticket/dest/t243.html"
+},
+{
+word: "台州府城文化旅游区门票",
+type: "ticket",
+districtname: "临海 ￥15 起",
+url: "http://m.ctrip.com/webapp/ticket/dest/t16913.html"
+},
+{
+word: "北京5日4晚跟团游(4钻)·【携程自营 一价全包 爸妈放心游】赠长城往返缆车+慈禧水道 7正餐全含 12项门票全包 含升旗仪式 绝无购物无自费 保证纯玩 24小时贴心接送 贵的有道理",
+type: "travelgroup",
+districtname: "￥3565起",
+url: "http://m.ctrip.com/webapp/vacations/tour/detail?productId=8991768&saleCityId=32&departCityId=32"
+},
+{
+word: "北京5日4晚跟团游(5钻)·【携程自营 端午抢购 双成人立减 限赠长城缆车】升旗仪式 细看国家宝藏 天坛圆明园通票 无购物 24小时放心接送",
+type: "travelgroup",
+districtname: "￥3274起",
+url: "http://m.ctrip.com/webapp/vacations/tour/detail?productId=10713493&saleCityId=32&departCityId=32"
+},
+{
+word: "北京5日4晚跟团游(5钻)·【真五钻0购物·一线国际5·威斯汀丨诺金酒店丨万达文华】满4人赠相机 慢悠游 尊宠明星导游服务 +1元换购德云社相声 登慕田峪长城 品正宗全聚德 24H专车接送",
+type: "travelgroup",
+districtname: "￥3717起",
+url: "http://m.ctrip.com/webapp/vacations/tour/detail?productId=17832021&saleCityId=32&departCityId=32"
+},
+{
+word: "北戴河+承德+坝上+乌兰布统+塞罕坝+古北水镇6日5晚跟团游(4钻)·携程自营 28人VIP精品小团 一价全含 赠越野车穿越草原&吉尔特婚礼宴&帆船出海 夜宿古北 观长城灯光水舞秀 追寻塞罕坝精神 碳烤全羊",
+type: "travelgroup",
+districtname: "￥3849起",
+url: "http://m.ctrip.com/webapp/vacations/tour/detail?productId=16342870&saleCityId=32&departCityId=32"
+},
+{
+word: "北京5日4晚跟团游(4钻)·【超高性价比·错峰钜惠】京城全景·爸妈放心游丨全程4钻高端酒店+天天京味特色美食+24H管家服务+专属获奖导游带团丨观升旗+登八达岭长城+游天安门+故宫+奥林匹克公园等丨魅力京城·当季热卖",
+type: "travelgroup",
+districtname: "￥3145起",
+url: "http://m.ctrip.com/webapp/vacations/tour/detail?productId=18994574&saleCityId=32&departCityId=32"
+},
+{
+word: "北京5日自由行(5钻)·【私享京城】严选高端酒店 【赠】八达岭直通车 登长城 爬好汉坡 世界文化遗产之旅！双飞往返",
+type: "flighthotel",
+districtname: "￥2283起",
+url: "http://m.ctrip.com/webapp/diyfhxsdp/detail?salecityid=32&departcityid=32&productid=2092955"
+},
+{
+word: "北京4日自由行(5钻)·【轻 奢·Enjoy】下单减500元/单 王府井 北京丽晶酒店 | 北京JW万豪| 丽思卡尔顿 | 北京诺金『赠』八达岭长城直通车 双飞往返",
+type: "flighthotel",
+districtname: "￥2715起",
+url: "http://m.ctrip.com/webapp/diyfhxsdp/detail?salecityid=32&departcityid=32&productid=1015903271"
+},
+{
+word: "北京4-5日自由行(5钻)·【春来京城美】赠故宫门票 600岁故宫精华深度游 慕田峪长城 人少清净秀美 高铁往返",
+type: "flighthotel",
+districtname: "￥2458起",
+url: "http://m.ctrip.com/webapp/diyfhxsdp/detail?salecityid=32&departcityid=32&productid=1019474663"
+},
+{
+word: "北京4日自由行(5钻)·【轻 奢·Enjoy】下单减500元/单 王府井 北京丽晶酒店 | 北京JW万豪| 丽思卡尔顿 | 北京诺金 『赠』八达岭长城直通车 高铁往返",
+type: "flighthotel",
+districtname: "￥3044起",
+url: "http://m.ctrip.com/webapp/diyfhxsdp/detail?salecityid=32&departcityid=32&productid=61243"
+},
+{
+word: "北京4-5日自由行(5钻)·【高去飞返】春来京城美 赠故宫门票 600岁故宫深度游 慕田峪长城 人少清净秀美",
+type: "flighthotel",
+districtname: "￥2261起",
+url: "http://m.ctrip.com/webapp/diyfhxsdp/detail?salecityid=32&departcityid=32&productid=1019609013"
+},
+{
+word: "如域·观山度假别院(北京古北口·长城源著店)1-3晚+可加购古北水镇/司马台长城门票•【紧邻古北水镇 房间内可仰观长城 俯瞰水镇】",
+type: "sighthotel",
+districtname: " ￥328 起",
+url: "http://m.ctrip.com/webapp/diyshx/detail/19376683.html"
+},
+{
+word: "拜登别院·北京古北口店1-2晚+可加购古北水镇/司马台长城门票•【紧临古北水镇 房间内可仰观长城 俯瞰水镇·假日早订】",
+type: "sighthotel",
+districtname: " ￥187 起",
+url: "http://m.ctrip.com/webapp/diyshx/detail/19376729.html"
+},
+{
+word: "北京日出东方凯宾斯基酒店1晚+含早餐+慕田峪长城门票·穹顶之外 雁栖湖畔",
+type: "sighthotel",
+districtname: " ￥1737 起",
+url: "http://m.ctrip.com/webapp/diyshx/detail/19376791.html"
+},
+{
+word: "驿捷度假连锁酒店(北京水长城二店)1-2晚+早餐+可加购怀柔多景区门票•【温馨质朴小院 浓郁中国风】",
+type: "sighthotel",
+districtname: " ￥136 起",
+url: "http://m.ctrip.com/webapp/diyshx/detail/19377009.html"
+},
+{
+word: "欢墅·度假别墅(北京古北长城源著店)1-2晚+可加购古北水镇/司马台长城多种门票•【紧临古北水镇 假日优选•可免费携带宠物】",
+type: "sighthotel",
+districtname: " ￥278 起",
+url: "http://m.ctrip.com/webapp/diyshx/detail/19377630.html"
+},
+{
+word: "北京长城脚下的公社独栋别墅套餐限时优惠1晚套餐",
+type: "hhtravel",
+districtname: "￥0.00起",
+url: "http://m.ctrip.com/webapp/hhtravel/Detail/134709/1/nopage#ctm_ref=hh_ct_chp_search"
+},
+{
+word: "【星空小镇·舒享春日】北京+古北水镇5天4晚·古北水镇御舍精品酒店高级套房+故宫+北海公园+司马台长城+山顶下午茶+水镇漫游+德云社演出",
+type: "hhtravel",
+districtname: "￥13700.00起",
+url: "http://m.ctrip.com/webapp/hhtravel/Detail/134561/1/nopage#ctm_ref=hh_ct_chp_search"
+},
+{
+word: "北京八达岭长城一日游【当日可订｜当日9:00前无损退｜可选定陵】",
+type: "huodong",
+districtname: "￥98 起",
+url: "http://m.ctrip.com/webapp/activity/dest/t10226914.html"
+},
+{
+word: "北京八达岭长城+颐和园+清华大学+鸟巢水立方外景一日游【可上门接|可含午餐|可升级贵宾团】",
+type: "huodong",
+districtname: "￥168 起",
+url: "http://m.ctrip.com/webapp/activity/dest/t14718607.html"
+}
+]
+}
+
+
+
+
+
+
+// {
+// "head": {
+// "auth": "sam",
+// "errcode": 0
+// },
+// "data": [
+// {
+// "word": "长城路附近的酒店",
+// "type": "poihotel",
+// "districtname": "广州",
+// "url": "http://m.ctrip.com/webapp/hotel/searchlist/22.77680015563965/113.39399719238281"
+// },
+// {
+// "word": "广州长城酒店",
+// "type": "hotel",
+// "price": "实时计价",
+// "star": "三星级",
+// "zonename": "珠江新城/五羊新城 ",
+// "districtname": "广州",
+// "url": "http://m.ctrip.com/webapp/hotel/hoteldetail/457345.html?atime=20190616"
+// },
+// {
+// "word": "广州长城宾馆",
+// "type": "hotel",
+// "price": "实时计价",
+// "star": "经济型",
+// "zonename": "珠江新城/五羊新城 ",
+// "districtname": "广州",
+// "url": "http://m.ctrip.com/webapp/hotel/hoteldetail/1734894.html?atime=20190616"
+// },
+// ]
+// }
