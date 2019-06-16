@@ -14,6 +14,7 @@ import 'package:flutter_xiecheng/widget/sub_nav.dart' show SubNav;
 import 'package:flutter_xiecheng/widget/sales_box.dart' show SalesBox;
 import 'package:flutter_xiecheng/widget/loading_container.dart' show LoadingContainer;
 import 'package:flutter_xiecheng/widget/search_bar.dart' show SearchBar, SearchBarType;
+import 'package:flutter_xiecheng/pages/search_page.dart' show SearchPage;
 
 const APPBAR_SCROLL_OFFSET = 100;
 const SEARCH_BAR_DEFAULT_TEXT = '网红大卡地 景点 酒店 美食';
@@ -229,7 +230,14 @@ class _HomePageState extends State<HomePage> {
     // );
   }
 
-  _jumpToSearch() {}
+  _jumpToSearch() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return SearchPage(
+        hideLife: false,
+        hint: SEARCH_BAR_DEFAULT_TEXT,
+      );
+    }));
+  }
 
   _jumpToSpeak() {}
 }
