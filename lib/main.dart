@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_xiecheng/navigator/tab_navigator.dart' show TabNavigator;
+import 'package:flutter/services.dart' show SystemUiOverlayStyle, SystemChrome;
+import 'dart:io' show Platform;
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+  // ios默认透明不用加，自定义手机顶部黑条样式（Android沉浸式）
+  if (Platform.isAndroid) {
+    SystemUiOverlayStyle systemUiOverlayStyle =
+        SystemUiOverlayStyle(statusBarColor: Colors.transparent);
+    SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
+  }
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -20,6 +30,7 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+        // canvasColor: Colors.transparent
       ),
       home: TabNavigator(),
     );
